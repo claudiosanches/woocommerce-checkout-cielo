@@ -110,6 +110,34 @@ class WC_Checkout_Cielo_API {
 	}
 
 	/**
+	 * Get price.
+	 *
+	 * @param  float $price
+	 *
+	 * @return int
+	 */
+	protected function get_price( $price ) {
+		$price_in_cents = round( $price, 2 ) * 100;
+
+		return apply_filters( 'wc_checkout_cielo_get_price', $price_in_cents, $price );
+	}
+
+	/**
+	 * Get discount.
+	 *
+	 * @param  WC_Order $order
+	 *
+	 * @return int
+	 */
+	protected function get_discount( $order ) {
+		if ( defined( 'WC_VERSION' ) && version_compare( WC_VERSION, '2.3', '<' ) ) {
+			return $this->get_price( $order->get_order_discount() );
+		} else {
+			return $this->get_price( $order->get_total_discount() );
+		}
+	}
+
+	/**
 	 * Get customer data.
 	 *
 	 * @param  WC_Order $order
@@ -151,7 +179,7 @@ class WC_Checkout_Cielo_API {
 		if ( 0 < $order->get_total_shipping() ) {
 			$data['shipping_type']    = '2'; // Flat rate.
 			$data['shipping_1_name']  = $order->get_shipping_method();
-			$data['shipping_1_price'] = $order->get_total_shipping() * 100;
+			$data['shipping_1_price'] = $this->get_price( $order->get_total_shipping() );
 		} else {
 			$data['shipping_type'] = '3';
 		}
@@ -171,20 +199,19 @@ class WC_Checkout_Cielo_API {
 		$data  = array();
 
 		// Force only one item.
-		if ( 'yes' == $this->send_only_total ) {
+		if ( 'yes' == $this->send_only_total || 'yes' == get_option( 'woocommerce_prices_include_tax' ) ) {
 			$data['cart_' . $i . '_name']        = $this->sanitize_string( sprintf( __( 'Order %s', 'woocommerce-checkout-cielo' ), $order->get_order_number() ) );
 			// $data['cart_' . $i . '_description'] = '';
-			$data['cart_' . $i . '_unitprice']   = ( $order->get_total() - $order->get_total_shipping() ) * 100;
+			$data['cart_' . $i . '_unitprice']   = $this->get_price( $order->get_total() ) - $this->get_price( $order->get_total_shipping() ) + $this->get_discount( $order );
 			$data['cart_' . $i . '_quantity']    = '1';
 			$data['cart_' . $i . '_type']        = '1';
 			// $data['cart_' . $i . '_code']        = '';
 			$data['cart_' . $i . '_weight']      = '0';
 		} else {
-			// Products.
 			if ( 0 < sizeof( $order->get_items() ) ) {
 				foreach ( $order->get_items() as $order_item ) {
 					if ( $order_item['qty'] ) {
-						$item_total = $order->get_item_total( $order_item, false ) * 100;
+						$item_total = $this->get_price( $order->get_item_subtotal( $order_item, false ) );
 
 						if ( 0 > $item_total ) {
 							continue;
@@ -214,17 +241,11 @@ class WC_Checkout_Cielo_API {
 			// Fees.
 			if ( 0 < sizeof( $order->get_fees() ) ) {
 				foreach ( $order->get_fees() as $fee ) {
-					$fee_total = $fee['line_total'] * 100;
+					$fee_total = $this->get_price( $fee['line_total'] );
 
 					if ( 0 > $fee_total ) {
 						continue;
 					}
-
-					$items[] = array(
-						'description' => $fee['name'],
-						'price_cents' => $fee_total,
-						'quantity'    => 1
-					);
 
 					$data['cart_' . $i . '_name']      = $this->sanitize_string( $fee['name'] );
 					$data['cart_' . $i . '_unitprice'] = $fee_total;
@@ -237,7 +258,7 @@ class WC_Checkout_Cielo_API {
 			// Taxes.
 			if ( 0 < sizeof( $order->get_taxes() ) ) {
 				foreach ( $order->get_taxes() as $tax ) {
-					$tax_total = ( $tax['tax_amount'] + $tax['shipping_tax_amount'] ) * 100;
+					$tax_total = $this->get_price( $tax['tax_amount'] + $tax['shipping_tax_amount'] );
 
 					if ( 0 > $tax_total ) {
 						continue;
@@ -263,18 +284,12 @@ class WC_Checkout_Cielo_API {
 	 * @return array
 	 */
 	public function get_discount_data( $order ) {
-		$data = array();
+		$data     = array();
+		$discount = $this->get_discount( $order );
 
-		if ( defined( 'WC_VERSION' ) && version_compare( WC_VERSION, '2.3', '<' ) ) {
-			if ( 0 < $order->get_order_discount() ) {
-				$data['discount_type']  = '1';
-				$data['discount_value'] = $order->get_order_discount() * 100;
-			}
-		} else {
-			if ( 0 < $order->get_total_discount() ) {
-				$data['discount_type']  = '1';
-				$data['discount_value'] = $order->get_total_discount() * 100;
-			}
+		if ( 0 < $discount ) {
+			$data['discount_type']  = '1';
+			$data['discount_value'] = $discount;
 		}
 
 		return $data;
