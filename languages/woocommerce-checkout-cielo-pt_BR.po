@@ -1,12 +1,13 @@
 # Copyright (C) 2015 Claudio Sanches, Gabriel Reguly
 # This file is distributed under the GPLv2 or later.
 # Translators:
+# Claudio Sanches <contato@claudiosmweb.com>, 2015
 msgid ""
 msgstr ""
 "Project-Id-Version: WooCommerce Checkout Cielo\n"
 "Report-Msgid-Bugs-To: http://wordpress.org/support/plugin/woocommerce-checkout-cielo\n"
-"POT-Creation-Date: 2015-04-12 17:48:59+00:00\n"
-"PO-Revision-Date: 2015-04-12 17:52+0000\n"
+"POT-Creation-Date: 2015-04-12 19:52:41+00:00\n"
+"PO-Revision-Date: 2015-04-12 19:54+0000\n"
 "Last-Translator: Claudio Sanches <contato@claudiosmweb.com>\n"
 "Language-Team: Portuguese (Brazil) (http://www.transifex.com/projects/p/woocommerce-checkout-cielo/language/pt_BR/)\n"
 "MIME-Version: 1.0\n"
@@ -308,6 +309,24 @@ msgstr "Cielo: Cartão de crédito autorizado. É necessário capturar o valor n
 msgid "Cielo: Payment refunded."
 msgstr "Cielo: Pagamento reembolsado."
 
+#: includes/views/html-admin-page.php:23
+msgid ""
+"Help us keep the %s plugin free making a %s or rate %s on %s. Thank you in "
+"advance!"
+msgstr "Ajude-nos a manter o %s gratuito, para isso faça uma %s ou vote %s no %s. Muito obrigado!"
+
+#. Plugin Name of the plugin/theme
+msgid "WooCommerce Checkout Cielo"
+msgstr "WooCommerce Checkout Cielo"
+
+#: includes/views/html-admin-page.php:23
+msgid "donation"
+msgstr "doação"
+
+#: includes/views/html-admin-page.php:23
+msgid "WordPress.org"
+msgstr "WordPress.org"
+
 #: includes/views/html-notice-currency-not-supported.php:13
 msgid ""
 "Currency <code>%s</code> is not supported. Works only with Brazilian Real."
@@ -328,10 +347,6 @@ msgstr "WooCommerce"
 #: woocommerce-checkout-cielo.php:125
 msgid "Settings"
 msgstr "Configurações"
-
-#. Plugin Name of the plugin/theme
-msgid "WooCommerce Checkout Cielo"
-msgstr "WooCommerce Checkout Cielo"
 
 #. Plugin URI of the plugin/theme
 msgid "https://github.com/claudiosmweb/woocommerce-checkout-cielo"
