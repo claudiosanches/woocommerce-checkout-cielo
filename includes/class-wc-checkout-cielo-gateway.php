@@ -277,6 +277,10 @@ class WC_Checkout_Cielo_Gateway extends WC_Payment_Gateway {
 				add_post_meta( $order->id, '_transaction_id', $transaction_id, true );
 				do_action( 'wc_checkout_cielo_update_order_status', $order, $data );
 				exit;
+			} else {
+				if ( 'yes' == $this->debug ) {
+					$this->log->add( $this->id, 'Invalid status change: ' . print_r( $data, true ) );
+				}
 			}
 		}
 
