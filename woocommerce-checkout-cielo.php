@@ -122,7 +122,7 @@ class WC_Checkout_Cielo {
 	 */
 	public function plugin_action_links( $links ) {
 		$plugin_links   = array();
-		$plugin_links[] = '<a href="' . esc_url(admin_url( 'admin.php?page=wc-settings&tab=checkout&section=wc_checkout_cielo_gateway' ) ) . '">' . __( 'Settings', 'woocommerce-checkout-cielo' ) . '</a>';
+		$plugin_links[] = '<a href="' . esc_url( admin_url( 'admin.php?page=wc-settings&tab=checkout&section=wc_checkout_cielo_gateway' ) ) . '">' . __( 'Settings', 'woocommerce-checkout-cielo' ) . '</a>';
 
 		return array_merge( $plugin_links, $links );
 	}
