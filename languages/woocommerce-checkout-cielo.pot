@@ -1,350 +1,345 @@
 # Copyright (C) 2015 Claudio Sanches, Gabriel Reguly
 # This file is distributed under the GPLv2 or later.
-# Translators:
 msgid ""
 msgstr ""
-"Project-Id-Version: WooCommerce Checkout Cielo\n"
-"Report-Msgid-Bugs-To: http://wordpress.org/support/plugin/woocommerce-checkout-cielo\n"
+"Project-Id-Version: WooCommerce Checkout Cielo 1.0.0\n"
+"Report-Msgid-Bugs-To: "
+"http://wordpress.org/support/plugin/woocommerce-checkout-cielo\n"
 "POT-Creation-Date: 2015-04-12 17:48:59+00:00\n"
-"PO-Revision-Date: 2015-04-12 17:52+0000\n"
-"Last-Translator: Claudio Sanches <contato@claudiosmweb.com>\n"
-"Language-Team: Portuguese (Brazil) (http://www.transifex.com/projects/p/woocommerce-checkout-cielo/language/pt_BR/)\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: pt_BR\n"
-"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"PO-Revision-Date: 2015-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
 "X-Generator: grunt-wp-i18n 0.5.1\n"
 
 #: includes/class-wc-checkout-cielo-api.php:203
 msgid "Order %s"
-msgstr "Pedido %s"
+msgstr ""
 
 #: includes/class-wc-checkout-cielo-api.php:334
 msgid "Credit Card"
-msgstr "Cartão de crédito"
+msgstr ""
 
 #: includes/class-wc-checkout-cielo-api.php:337
 msgid "Banking Billet"
-msgstr "Boleto bancário"
+msgstr ""
 
 #: includes/class-wc-checkout-cielo-api.php:340
 msgid "Online Debit"
-msgstr "Débito online"
+msgstr ""
 
 #: includes/class-wc-checkout-cielo-api.php:343
 msgid "Debit Card"
-msgstr "Cartão de débito"
+msgstr ""
 
 #: includes/class-wc-checkout-cielo-api.php:364
 msgid "Visa"
-msgstr "Visa"
+msgstr ""
 
 #: includes/class-wc-checkout-cielo-api.php:367
 msgid "Mastercad"
-msgstr "Mastercad"
+msgstr ""
 
 #: includes/class-wc-checkout-cielo-api.php:370
 msgid "AmericanExpress"
-msgstr "AmericanExpress"
+msgstr ""
 
 #: includes/class-wc-checkout-cielo-api.php:373
 msgid "Diners"
-msgstr "Diners"
+msgstr ""
 
 #: includes/class-wc-checkout-cielo-api.php:376
 msgid "Elo"
-msgstr "Elo"
+msgstr ""
 
 #: includes/class-wc-checkout-cielo-api.php:379
 msgid "Aura"
-msgstr "Aura"
+msgstr ""
 
 #: includes/class-wc-checkout-cielo-api.php:382
 msgid "JCB"
-msgstr "JCB"
+msgstr ""
 
 #: includes/class-wc-checkout-cielo-api.php:403
 msgid "Banco do Brasil"
-msgstr "Banco do Brasil"
+msgstr ""
 
 #: includes/class-wc-checkout-cielo-api.php:406
 msgid "Bradesco"
-msgstr "Bradesco"
+msgstr ""
 
 #: includes/class-wc-checkout-cielo-api.php:427
 msgid "Low Risk"
-msgstr "Baixo risco"
+msgstr ""
 
 #: includes/class-wc-checkout-cielo-api.php:430
 msgid "High Risk"
-msgstr "Alto risco"
+msgstr ""
 
 #: includes/class-wc-checkout-cielo-api.php:433
 msgid "Not Finished"
-msgstr "Não finalizado"
+msgstr ""
 
 #: includes/class-wc-checkout-cielo-api.php:436
 msgid "Moderate Risk"
-msgstr "Risco moderado"
+msgstr ""
 
 #: includes/class-wc-checkout-cielo-gateway.php:24
 msgid "Checkout Cielo"
-msgstr "Checkout Cielo"
+msgstr ""
 
 #: includes/class-wc-checkout-cielo-gateway.php:25
 msgid ""
 "Accept payments by credit card, debit card, online debit or banking billet "
 "using the Checkout Cielo."
-msgstr "Aceite pagamentos por cartão de crédito, cartão de débito, débito online e boleto bancário utilizando o Checkout Cielo."
+msgstr ""
 
 #: includes/class-wc-checkout-cielo-gateway.php:89
 msgid "Enable/Disable"
-msgstr "Habilitar/Desabilitar"
+msgstr ""
 
 #: includes/class-wc-checkout-cielo-gateway.php:91
 msgid "Enable Checkout Cielo"
-msgstr "Ativar Checkout Cielo"
+msgstr ""
 
 #: includes/class-wc-checkout-cielo-gateway.php:95
 msgid "Title"
-msgstr "Título"
+msgstr ""
 
 #: includes/class-wc-checkout-cielo-gateway.php:97
 msgid "This controls the title which the user sees during checkout."
-msgstr "Isto controla o título que o usuário vê durante a finalização da compra."
+msgstr ""
 
 #: includes/class-wc-checkout-cielo-gateway.php:99
 msgid "Cielo"
-msgstr "Cielo"
+msgstr ""
 
 #: includes/class-wc-checkout-cielo-gateway.php:102
 msgid "Description"
-msgstr "Descrição"
+msgstr ""
 
 #: includes/class-wc-checkout-cielo-gateway.php:104
 msgid "This controls the description which the user sees during checkout."
-msgstr "Isto controla a descrição que o usuário vê durante a finalização do pedido."
+msgstr ""
 
 #: includes/class-wc-checkout-cielo-gateway.php:105
 msgid "Pay with credit card, debit card, online debit or banking billet."
-msgstr "Pague com cartão de crédito, cartão de débito, débito online ou boleto bancário."
+msgstr ""
 
 #: includes/class-wc-checkout-cielo-gateway.php:108
 msgid "Integration Settings"
-msgstr "Configurações da Integração"
+msgstr ""
 
 #: includes/class-wc-checkout-cielo-gateway.php:110
 msgid "For the integration work you need to set the following urls in the %s:"
-msgstr "Para a integração funcionar é necessário que você configure as seguintes URLs em %s:"
+msgstr ""
 
 #: includes/class-wc-checkout-cielo-gateway.php:110
 msgid "Cielo Backoffice > Settings > Store Settings"
-msgstr "Cielo Backoffice > Configurações > Configurações da loja"
+msgstr ""
 
 #: includes/class-wc-checkout-cielo-gateway.php:110
 msgid "Return URL:"
-msgstr "URL de Retorno:"
+msgstr ""
 
 #: includes/class-wc-checkout-cielo-gateway.php:110
 msgid "Notification URL:"
-msgstr "URL de Notificação:"
+msgstr ""
 
 #: includes/class-wc-checkout-cielo-gateway.php:110
 msgid "Status Change URL:"
-msgstr "URL de Mudança de Status:"
+msgstr ""
 
 #: includes/class-wc-checkout-cielo-gateway.php:113
 msgid "Merchant ID"
-msgstr "Merchant ID"
+msgstr ""
 
 #: includes/class-wc-checkout-cielo-gateway.php:115
 msgid ""
 "Please enter your Merchant ID. This is needed in order to take payment. Is "
 "possible found the Merchant ID in %s."
-msgstr "Por favor, digite o seu Merchant ID. Isto é necessário para receber pagamentos. É possível encontrar o seu Merchant ID em %s."
+msgstr ""
 
 #: includes/class-wc-checkout-cielo-gateway.php:115
 msgid "Cielo Backoffice > Settings > Account Data"
-msgstr "Cielo Backoffice > Configurações > Dados cadastrais"
+msgstr ""
 
 #: includes/class-wc-checkout-cielo-gateway.php:122
 msgid "Integration Behavior"
-msgstr "Comportamento da integração"
+msgstr ""
 
 #: includes/class-wc-checkout-cielo-gateway.php:127
 msgid "Enable Antifraud"
-msgstr "Ativar Antifraude"
+msgstr ""
 
 #: includes/class-wc-checkout-cielo-gateway.php:129
-msgid ""
-"If this option is enabled the payments will be processed by the Antifraud."
-msgstr "Quando esta opção esta ativada os pagamentos são processados pelo antifraude."
+msgid "If this option is enabled the payments will be processed by the Antifraud."
+msgstr ""
 
 #: includes/class-wc-checkout-cielo-gateway.php:133
 msgid "Complete payment when Credit Card is Authorized"
-msgstr "Completar pagamentos para cartões de crédito autorizados"
+msgstr ""
 
 #: includes/class-wc-checkout-cielo-gateway.php:135
 msgid ""
 "If this option is enabled the payment is completed when the credit card has "
 "been authorized and before the value is captured."
-msgstr "Quando esta opção esta ativada os pagamentos são completados quando um cartão de crédito é autorizado, mesmo antes do valor ser capturado."
+msgstr ""
 
 #: includes/class-wc-checkout-cielo-gateway.php:139
 msgid "Send only the order total"
-msgstr "Enviar apenas o total do pedido"
+msgstr ""
 
 #: includes/class-wc-checkout-cielo-gateway.php:141
 msgid ""
 "If this option is enabled will only send the order total, not the list of "
 "items."
-msgstr "Quando esta opção esta ativada será enviado apenas o total do pedido e não a lista de itens."
+msgstr ""
 
 #: includes/class-wc-checkout-cielo-gateway.php:145
 msgid "Gateway Testing"
-msgstr "Teste de Gateway"
+msgstr ""
 
 #: includes/class-wc-checkout-cielo-gateway.php:150
 msgid "Debug Log"
-msgstr "Log de depuração"
+msgstr ""
 
 #: includes/class-wc-checkout-cielo-gateway.php:152
 msgid "Enable logging"
-msgstr "Habilitar log"
+msgstr ""
 
 #: includes/class-wc-checkout-cielo-gateway.php:154
 msgid ""
 "Log Checkout Cielo events, such as API requests, you can check this log in "
 "%s."
-msgstr "Registra eventos do Checkout Cielo, como requisições na API, você pode verificar este log em %s."
+msgstr ""
 
 #: includes/class-wc-checkout-cielo-gateway.php:154
 msgid "System Status &gt; Logs"
-msgstr "Status do Sistema &gt; Logs"
+msgstr ""
 
 #: includes/class-wc-checkout-cielo-gateway.php:189
 msgid ""
 "Thank you for your order. We are now redirecting you to Cielo to make "
 "payment."
-msgstr "Obrigado pelo seu pedido. Nos estamos lhe redirecionando para fazer o pagamento no site da Cielo."
+msgstr ""
 
 #: includes/class-wc-checkout-cielo-gateway.php:213
 msgid "Pay via Cielo"
-msgstr "Pagar com Cielo"
+msgstr ""
 
 #: includes/class-wc-checkout-cielo-gateway.php:213
 msgid "Cancel order &amp; restore cart"
-msgstr "Cancelar pedido &amp; restaurar carrinho"
+msgstr ""
 
 #: includes/class-wc-checkout-cielo-gateway.php:243
 msgid ""
 "Thank you - your order is now pending payment. You should be automatically "
 "redirected to Cielo to make payment."
-msgstr "Obrigado - o seu pedido esta com o pagamento pendente. Você será redirecionado automaticamente para o site da Cielo para poder realizar o seu pagamento."
+msgstr ""
 
 #: includes/class-wc-checkout-cielo-gateway.php:287
 msgid "Cielo Request Failure"
-msgstr "Cielo - Falha na requisição"
+msgstr ""
 
 #: includes/class-wc-checkout-cielo-gateway.php:302
 msgid "Cielo TID"
-msgstr "TID Cielo"
+msgstr ""
 
 #: includes/class-wc-checkout-cielo-gateway.php:309
 msgid "Payer email"
-msgstr "E-mail do pagador"
+msgstr ""
 
 #: includes/class-wc-checkout-cielo-gateway.php:316
 msgid "Payer name"
-msgstr "Nome do pagador"
+msgstr ""
 
 #: includes/class-wc-checkout-cielo-gateway.php:323
 msgid "Payment type"
-msgstr "Tipo de pagamento"
+msgstr ""
 
 #: includes/class-wc-checkout-cielo-gateway.php:330
 msgid "Payment method"
-msgstr "Método de pagamento"
+msgstr ""
 
 #: includes/class-wc-checkout-cielo-gateway.php:337
 msgid "Payment bank"
-msgstr "Banco"
+msgstr ""
 
 #: includes/class-wc-checkout-cielo-gateway.php:344
 msgid "Installments"
-msgstr "Parcelas"
+msgstr ""
 
 #: includes/class-wc-checkout-cielo-gateway.php:351
 msgid "Antifraud result"
-msgstr "Resultado do antifraude"
+msgstr ""
 
 #: includes/class-wc-checkout-cielo-gateway.php:358
 msgid "Cielo: Payment pending."
-msgstr "Cielo: Pagamento pendente."
+msgstr ""
 
 #: includes/class-wc-checkout-cielo-gateway.php:362
 msgid "Cielo: Order paid."
-msgstr "Cielo: Pedido pago."
+msgstr ""
 
 #: includes/class-wc-checkout-cielo-gateway.php:369
 msgid "Cielo: Credit card denied."
-msgstr "Cielo: Cartão de crédito negado."
+msgstr ""
 
 #: includes/class-wc-checkout-cielo-gateway.php:373
 msgid "Cielo: Credit card payment canceled."
-msgstr "Cielo: O pagamento do cartão de crédito foi cancelado."
+msgstr ""
 
 #: includes/class-wc-checkout-cielo-gateway.php:377
 msgid "Cielo: Payment not finished."
-msgstr "Cielo: Pagamento não finalizado."
+msgstr ""
 
 #: includes/class-wc-checkout-cielo-gateway.php:381
-msgid ""
-"Cielo: Credit card authorized. Need to be capatured in the Cielo Backoffice."
-msgstr "Cielo: Cartão de crédito autorizado. É necessário capturar o valor no Cielo Backoffice."
+msgid "Cielo: Credit card authorized. Need to be capatured in the Cielo Backoffice."
+msgstr ""
 
 #: includes/class-wc-checkout-cielo-gateway.php:393
 msgid "Cielo: Payment refunded."
-msgstr "Cielo: Pagamento reembolsado."
+msgstr ""
 
 #: includes/views/html-notice-currency-not-supported.php:13
-msgid ""
-"Currency <code>%s</code> is not supported. Works only with Brazilian Real."
-msgstr "A moeda <code>%s</code> não é suportada. Funciona apenas com Real."
+msgid "Currency <code>%s</code> is not supported. Works only with Brazilian Real."
+msgstr ""
 
 #: includes/views/html-notice-woocommerce-missing.php:20
 msgid "WooCommerce Checkout Cielo Disabled"
-msgstr "WooCommerce Checkout Cielo esta desativado"
+msgstr ""
 
 #: includes/views/html-notice-woocommerce-missing.php:20
 msgid "This plugin depends on the last version of %s to work!"
-msgstr "Este plugin depende da última versão do %s para funcionar!"
+msgstr ""
 
 #: includes/views/html-notice-woocommerce-missing.php:20
 msgid "WooCommerce"
-msgstr "WooCommerce"
+msgstr ""
 
 #: woocommerce-checkout-cielo.php:125
 msgid "Settings"
-msgstr "Configurações"
+msgstr ""
 
 #. Plugin Name of the plugin/theme
 msgid "WooCommerce Checkout Cielo"
-msgstr "WooCommerce Checkout Cielo"
+msgstr ""
 
 #. Plugin URI of the plugin/theme
 msgid "https://github.com/claudiosmweb/woocommerce-checkout-cielo"
-msgstr "https://github.com/claudiosmweb/woocommerce-checkout-cielo"
+msgstr ""
 
 #. Description of the plugin/theme
 msgid "Checkout Cielo payment gateway for WooCommerce."
-msgstr "Gateway de pagamento Checkout Cielo para WooCommerce."
+msgstr ""
 
 #. Author of the plugin/theme
 msgid "Claudio Sanches, Gabriel Reguly"
-msgstr "Claudio Sanches, Gabriel Reguly"
+msgstr ""
 
 #. Author URI of the plugin/theme
 msgid "http://claudiosmweb.com/"
-msgstr "http://claudiosmweb.com/"
+msgstr ""
