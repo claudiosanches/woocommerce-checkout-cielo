@@ -4,7 +4,7 @@ Donate link: http://claudiosmweb.com/doacoes/
 Tags: woocommerce, cielo, payment
 Requires at least: 3.9
 Tested up to: 4.1.1
-Stable tag: 1.0.1
+Stable tag: 1.0.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -163,6 +163,10 @@ Com o log em mãos abra um [tópico em nosso fórum](http://wordpress.org/suppor
 
 == Changelog ==
 
+= 1.0.2 - 2015/04/16 =
+
+* Corrigida a compatibilidade com o WooCommerce 2.2.
+
 = 1.0.1 - 2015/04/12 =
 
 * Atualizada a tradução do plugin.
@@ -174,10 +178,9 @@ Com o log em mãos abra um [tópico em nosso fórum](http://wordpress.org/suppor
 
 == Upgrade Notice ==
 
-= 1.0.1 =
+= 1.0.2 =
 
-* Atualizada a tradução do plugin.
-* Criada documentação em Português.
+* Corrigida a compatibilidade com o WooCommerce 2.2.
 
 == License ==
 
