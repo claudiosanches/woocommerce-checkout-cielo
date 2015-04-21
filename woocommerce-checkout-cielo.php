@@ -105,15 +105,6 @@ class WC_Checkout_Cielo {
 	}
 
 	/**
-	 * Get the settings URL.
-	 *
-	 * @return string
-	 */
-	public static function get_settings_url() {
-		return admin_url( 'admin.php?page=wc-settings&tab=checkout&section=wc_checkout_cielo_gateway' );
-	}
-
-	/**
 	 * Action links.
 	 *
 	 * @param  array $links
