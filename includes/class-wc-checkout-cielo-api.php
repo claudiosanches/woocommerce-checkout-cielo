@@ -147,9 +147,14 @@ class WC_Checkout_Cielo_API {
 	protected function get_customer_data( $order ) {
 		$data = array(
 			'customer_name'  => $order->billing_first_name . ' ' . $order->billing_last_name,
-			'customer_email' => $order->billing_email,
-			'customer_phone' => $this->only_numbers( $order->billing_phone )
+			'customer_email' => $order->billing_email
 		);
+
+		$customer_phone = $this->only_numbers( $order->billing_phone );
+
+		if ( in_array( strlen( $customer_phone ), array( 10, 11 ) ) ) {
+			$data['customer_phone'] = $customer_phone;
+		}
 
 		if ( class_exists( 'Extra_Checkout_Fields_For_Brazil' ) ) {
 			$data['customer_identity'] = $this->get_cpf_cnpj( $order );
