@@ -1,7 +1,7 @@
 {
   "name": "woocommerce-checkout-cielo",
   "description": "Checkout Cielo payment gateway for WooCommerce.",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "repository": {
     "type": "git",
     "url": "https://github.com/claudiosmweb/woocommerce-checkout-cielo.git"
