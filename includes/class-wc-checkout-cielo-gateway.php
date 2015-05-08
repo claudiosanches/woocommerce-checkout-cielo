@@ -30,7 +30,7 @@ class WC_Checkout_Cielo_Gateway extends WC_Payment_Gateway {
 		// Load the settings.
 		$this->init_settings();
 
-		// Optins.
+		// Options.
 		$this->title           = $this->get_option( 'title' );
 		$this->description     = $this->get_option( 'description' );
 		$this->merchant_id     = $this->get_option( 'merchant_id' );
