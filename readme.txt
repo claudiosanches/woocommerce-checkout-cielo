@@ -150,6 +150,10 @@ Para resolver este problema vá até "WooCommerce" > "Configurações" > "Produt
 
 Caso você tenha este problema, basta marcar ativar a opção **Enviar apenas o total do pedido** na página de configurações do plugin.
 
+= Acontece um erro 404 quando redireciona para a Cielo =
+
+Aparece 'HTTP Error 404. The requested resource is not found.' na URL http://cieloecommerce.cielo.com.br/Transactional/Order/Index? Provavelmente seu site está usando um serviço de CDN como o CloudFare e impedindo o redirecionamento HTTPS. Desligue o CDN e tente novamente.
+
 = Mais dúvidas relacionadas ao funcionamento do plugin? =
 
 Por favor, caso você tenha algum problema com o funcionamento do plugin, envie o log (ative ele nas opções do plugin e tente fazer uma compra, ele vai ficar dentro da pasta wp-content/plugins/woocommerce/logs/) usando o [pastebin.com](http://pastebin.com) ou o [gist.github.com](http://gist.github.com), desta forma fica mais rápido para fazer o diagnóstico.
@@ -160,6 +164,7 @@ Com o log em mãos abra um [tópico em nosso fórum](http://wordpress.org/suppor
 
 1. Configurações do plugin.
 2. Exemplo do método de pagamento na página de finalização do pedido.
+3. Exemplo de tela de pagamento no ambiente da Cielo
 
 == Changelog ==
 
