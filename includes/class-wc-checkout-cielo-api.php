@@ -223,8 +223,13 @@ class WC_Checkout_Cielo_API {
 						}
 
 						// Get product data.
-						$_product  = apply_filters( 'woocommerce_order_item_product', $order->get_product_from_item( $order_item ), $order_item );
-						$item_meta = new WC_Order_Item_Meta( $order_item['item_meta'], $_product );
+						$_product = apply_filters( 'woocommerce_order_item_product', $order->get_product_from_item( $order_item ), $order_item );
+
+						if ( defined( 'WC_VERSION' ) && version_compare( WC_VERSION, '2.4.0', '<' ) ) {
+							$item_meta = new WC_Order_Item_Meta( $order_item['item_meta'], $_product );
+						} else {
+							$item_meta = new WC_Order_Item_Meta( $order_item, $_product );
+						}
 
 						$data['cart_' . $i . '_name'] = $this->sanitize_string( $order_item['name'] );
 						if ( $meta = $item_meta->display( true, true ) ) {
