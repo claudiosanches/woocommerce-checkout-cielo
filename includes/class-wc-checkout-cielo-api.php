@@ -9,7 +9,7 @@ if ( ! defined( 'ABSPATH' ) ) {
  * Checkout Cielo API handler.
  *
  * @class   WC_Checkout_Cielo_API
- * @version 1.0.0
+ * @version 1.0.4
  * @author  Claudio Sanches
  */
 class WC_Checkout_Cielo_API {

@@ -2,9 +2,9 @@
 **Contributors:** claudiosanches, Gabriel Reguly  
 **Donate link:** http://claudiosmweb.com/doacoes/  
 **Tags:** woocommerce, cielo, payment  
-**Requires at least:** 3.9  
-**Tested up to:** 4.2.2  
-**Stable tag:** 1.0.3  
+**Requires at least:** 4.0  
+**Tested up to:** 4.3  
+**Stable tag:** 1.0.4  
 **License:** GPLv2 or later  
 **License URI:** http://www.gnu.org/licenses/gpl-2.0.html  
 
@@ -22,7 +22,7 @@ Este plugin foi desenvolvido a partir da [Manual do desenvolvedor v1.3 da Cielo]
 
 ### Compatibilidade ###
 
-Compatível com as versões 2.2.x e 2.3.x do WooCommerce.
+Compatível com as versões 2.2.x, 2.3.x e 2.4.x do WooCommerce.
 
 Este plugin também é compatível com o [WooCommerce Extra Checkout Fields for Brazil](http://wordpress.org/plugins/woocommerce-extra-checkout-fields-for-brazil/), desta forma é possível enviar os campos de "CPF/CNPJ", "número do endereço" e "bairro".
 
@@ -150,10 +150,9 @@ Para resolver este problema vá até "WooCommerce" > "Configurações" > "Produt
 
 Caso você tenha este problema, basta marcar ativar a opção **Enviar apenas o total do pedido** na página de configurações do plugin.
 
-### Acontece um erro 404 quando redireciona para a Cielo =
+### Acontece um erro 404 quando redireciona para a Cielo ###
 
 Aparece 'HTTP Error 404. The requested resource is not found.' na URL http://cieloecommerce.cielo.com.br/Transactional/Order/Index? Provavelmente seu site está usando um serviço de CDN como o CloudFare e impedindo o redirecionamento HTTPS. Desligue o CDN e tente novamente.
-
 
 ### Mais dúvidas relacionadas ao funcionamento do plugin? ###
 
@@ -169,11 +168,15 @@ Com o log em mãos abra um [tópico em nosso fórum](http://wordpress.org/suppor
 ### 2. Exemplo do método de pagamento na página de finalização do pedido. ###
 ![2. Exemplo do método de pagamento na página de finalização do pedido.](http://ps.w.org/woocommerce-checkout-cielo/assets/screenshot-2.png)
 
-### 3. Exemplo de tela de pagamento no ambiente da Cielo.  ###
-![. Exemplo de tela de pagamento no ambiente da Cielo.](http://ps.w.org/woocommerce-checkout-cielo/assets/screenshot-3.png)
+### 3. Exemplo de tela de pagamento no ambiente da Cielo ###
+![3. Exemplo de tela de pagamento no ambiente da Cielo](http://ps.w.org/woocommerce-checkout-cielo/assets/screenshot-3.png)
 
 
 ## Changelog ##
+
+### 1.0.4 - 2015/08/16 ###
+
+* Suporte completo para a versão 2.4 do WooCommerce.
 
 ### 1.0.3 - 2015/05/08 ###
 
@@ -194,9 +197,9 @@ Com o log em mãos abra um [tópico em nosso fórum](http://wordpress.org/suppor
 
 ## Upgrade Notice ##
 
-### 1.0.3 ###
+### 1.0.4 ###
 
-* Corrigido erros quando o cliente usa um número de telefone incorreto.
+* Suporte completo para a versão 2.4 do WooCommerce.
 
 ## License ##
 
