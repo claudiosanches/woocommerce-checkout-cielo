@@ -1,8 +1,0 @@
-[main]
-host = https://www.transifex.com
-
-[woocommerce-checkout-cielo.woocommerce-checkout-cielo]
-file_filter = languages/woocommerce-checkout-cielo-<lang>.po
-source_file = languages/woocommerce-checkout-cielo.pot
-source_lang = en
-type = PO
