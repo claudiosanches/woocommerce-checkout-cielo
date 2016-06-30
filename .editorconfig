@@ -20,4 +20,3 @@ trim_trailing_whitespace = false
 insert_final_newline = false
 indent_size = 2
 tab_width = 2
-
