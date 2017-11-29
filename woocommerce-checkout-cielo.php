@@ -121,4 +121,11 @@ class WC_Checkout_Cielo {
 
 add_action( 'plugins_loaded', array( 'WC_Checkout_Cielo', 'get_instance' ) );
 
+//Insert Query for Order_IDD
+
+function add_query_vars_filter( $vars ){
+  $vars[] = "order_idd";
+  return $vars;
+}
+add_filter( 'query_vars', 'add_query_vars_filter' );
 endif;
