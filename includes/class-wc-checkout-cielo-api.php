@@ -319,7 +319,8 @@ class WC_Checkout_Cielo_API {
 		$data = array(
 			'merchant_id'       => $this->merchant_id,
 			'order_number'      => $order->id,
-			'antifraud_enabled' => ( 'yes' == $this->antifraud ) ? 'TRUE' : 'FALSE'
+			'antifraud_enabled' => ( 'yes' == $this->antifraud ) ? 'TRUE' : 'FALSE',
+			'ReturnUrl' => 'false'
 		);
 
 		$customer_data = $this->get_customer_data( $order );
