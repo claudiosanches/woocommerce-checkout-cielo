@@ -1,11 +1,11 @@
 <?php
 /**
- * Plugin Name: WooCommerce Checkout Cielo
- * Plugin URI: https://github.com/claudiosmweb/woocommerce-checkout-cielo
+ * Plugin Name: Claudio Sanches - Checkout Cielo for WooCommerce
+ * Plugin URI: https://github.com/claudiosanches/woocommerce-checkout-cielo
  * Description: Checkout Cielo payment gateway for WooCommerce.
  * Author: Claudio Sanches, Gabriel Reguly
- * Author URI: http://claudiosmweb.com/
- * Version: 1.0.4
+ * Author URI: http://claudiosanches.com/
+ * Version: 1.1.0
  * License: GPLv2 or later
  * Text Domain: woocommerce-checkout-cielo
  * Domain Path: languages/
@@ -18,7 +18,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 if ( ! class_exists( 'WC_Checkout_Cielo' ) ) :
 
 /**
- * WooCommerce Checkout Cielo main class.
+ * Plugin's main class.
  */
 class WC_Checkout_Cielo {
 
@@ -27,7 +27,7 @@ class WC_Checkout_Cielo {
 	 *
 	 * @var string
 	 */
-	const VERSION = '1.0.4';
+	const VERSION = '1.1.0';
 
 	/**
 	 * Instance of this class.

@@ -20,7 +20,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 <?php if ( apply_filters( 'wc_checkout_cielo_help_message', true ) ) : ?>
 	<div class="updated woocommerce-message">
-		<p><?php printf( __( 'Help us keep the %s plugin free making a %s or rate %s on %s. Thank you in advance!', 'woocommerce-checkout-cielo' ), '<strong>' . __( 'WooCommerce Checkout Cielo', 'woocommerce-checkout-cielo' ) . '</strong>', '<a href="http://claudiosmweb.com/doacoes/">' . __( 'donation', 'woocommerce-checkout-cielo' ) . '</a>', '<a href="https://wordpress.org/support/view/plugin-reviews/woocommerce-checkout-cielo?filter=5#postform" target="_blank">&#9733;&#9733;&#9733;&#9733;&#9733;</a>', '<a href="https://wordpress.org/support/view/plugin-reviews/woocommerce-checkout-cielo?filter=5#postform" target="_blank">' . __( 'WordPress.org', 'woocommerce-checkout-cielo' ) . '</a>' ); ?></p>
+		<p><?php printf( __( 'Help us keep the %s plugin free making a %s or rate %s on %s. Thank you in advance!', 'woocommerce-checkout-cielo' ), '<strong>' . __( 'Claudio Sanches - Checkout Cielo for WooCommerce', 'woocommerce-checkout-cielo' ) . '</strong>', '<a href="http://claudiosmweb.com/doacoes/">' . __( 'donation', 'woocommerce-checkout-cielo' ) . '</a>', '<a href="https://wordpress.org/support/view/plugin-reviews/woocommerce-checkout-cielo?filter=5#postform" target="_blank">&#9733;&#9733;&#9733;&#9733;&#9733;</a>', '<a href="https://wordpress.org/support/view/plugin-reviews/woocommerce-checkout-cielo?filter=5#postform" target="_blank">' . __( 'WordPress.org', 'woocommerce-checkout-cielo' ) . '</a>' ); ?></p>
 	</div>
 <?php endif; ?>
 

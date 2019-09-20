@@ -4,7 +4,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 /**
- * WooCommerce Checkout Cielo API class.
+ * API class.
  *
  * Checkout Cielo API handler.
  *

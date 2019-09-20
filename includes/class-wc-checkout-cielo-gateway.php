@@ -4,7 +4,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 /**
- * WooCommerce Checkout Cielo Gateway class.
+ * Gateway class.
  *
  * Extended by individual payment gateways to handle payments.
  *

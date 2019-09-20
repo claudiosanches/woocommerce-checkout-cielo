@@ -17,5 +17,5 @@ if ( current_user_can( 'install_plugins' ) ) {
 ?>
 
 <div class="error">
-	<p><strong><?php _e( 'WooCommerce Checkout Cielo Disabled', 'woocommerce-checkout-cielo' ); ?></strong>: <?php printf( __( 'This plugin depends on the last version of %s to work!', 'woocommerce-checkout-cielo' ), '<a href="' . esc_url( $url ) . '">' . __( 'WooCommerce', 'woocommerce-checkout-cielo' ) . '</a>' ); ?></p>
+	<p><strong><?php _e( 'Claudio Sanches - Checkout Cielo for WooCommerce Disabled', 'woocommerce-checkout-cielo' ); ?></strong>: <?php printf( __( 'This plugin depends on the last version of %s to work!', 'woocommerce-checkout-cielo' ), '<a href="' . esc_url( $url ) . '">' . __( 'WooCommerce', 'woocommerce-checkout-cielo' ) . '</a>' ); ?></p>
 </div>

@@ -1,10 +1,10 @@
-=== WooCommerce Checkout Cielo ===
+=== Claudio Sanches - Checkout Cielo for WooCommerce ===
 Contributors: claudiosanches, Gabriel Reguly
 Donate link: http://claudiosmweb.com/doacoes/
 Tags: woocommerce, cielo, payment
 Requires at least: 4.0
-Tested up to: 4.5
-Stable tag: 1.0.4
+Tested up to: 5.2
+Stable tag: 1.1.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -16,13 +16,13 @@ Adicione o Checkout Cielo como método de pagamento em sua loja WooCommerce e pe
 
 Checkout Cielo é uma solução de pagamento da [Cielo](https://www.cielo.com.br/).
 
-O plugin WooCommerce Checkout Cielo foi desenvolvido sem nenhum incentivo da Cielo. Nenhum dos desenvolvedores deste plugin possuem vínculos com esta empresas.
+Este plugin foi desenvolvido sem nenhum incentivo da Cielo. Nenhum dos desenvolvedores deste plugin possuem vínculos com esta empresas.
 
 Este plugin foi desenvolvido a partir da [Manual do desenvolvedor v1.3 da Cielo](https://www.cielo.com.br/wps/wcm/connect/9bed8c0a-ae62-4834-b322-8ad1d966e78f/CheckoutCielo+-+Manual+do+desenvolvedor+v1.3.pdf?MOD=AJPERES&CONVERT_TO=url).
 
 = Compatibilidade =
 
-Compatível desde a versão 2.2.x até 2.6.x do WooCommerce.
+Compatível com as versões atuais do WooCommerce.
 
 Este plugin também é compatível com o [WooCommerce Extra Checkout Fields for Brazil](http://wordpress.org/plugins/woocommerce-extra-checkout-fields-for-brazil/), desta forma é possível enviar os campos de "CPF/CNPJ", "número do endereço" e "bairro".
 
@@ -168,6 +168,10 @@ Com o log em mãos abra um [tópico em nosso fórum](http://wordpress.org/suppor
 
 == Changelog ==
 
+= 1.1.0 - 2019/09/20 =
+
+* Nome do plugin alterado de "WooCommerce Checkout Cielo" para "Claudio Sanches - Checkout Cielo for WooCommerce".
+
 = 1.0.4 - 2015/08/16 =
 
 * Suporte completo para a versão 2.4 do WooCommerce.
@@ -191,6 +195,6 @@ Com o log em mãos abra um [tópico em nosso fórum](http://wordpress.org/suppor
 
 == Upgrade Notice ==
 
-= 1.0.4 =
+= 1.1.0 =
 
-* Suporte completo para a versão 2.4 do WooCommerce.
+* Nome do plugin alterado de "WooCommerce Checkout Cielo" para "Claudio Sanches - Checkout Cielo for WooCommerce".
