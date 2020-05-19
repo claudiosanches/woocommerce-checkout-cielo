@@ -267,7 +267,7 @@ class WC_Checkout_Cielo_Gateway extends WC_Payment_Gateway {
 			}
 
 			// Test if the notification is valid.
-			if ( is_object( $order ) && $amount === intval( $order->get_total() * 100 ) && $order_number === $order->id ) {
+			if ( is_object( $order ) && $amount === intval( round($order->get_total() * 100, 0) ) && $order_number === $order->id ) {
 				header( 'HTTP/1.1 200 OK' );
 
 				if ( 'yes' == $this->debug ) {
