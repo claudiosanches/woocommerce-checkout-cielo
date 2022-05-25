@@ -9,7 +9,7 @@
   "main": "Gruntfile.js",
   "devDependencies": {
     "expand-home-dir": "0.0.3",
-    "grunt": "^1.0.1",
+    "grunt": "^1.5.3",
     "grunt-checktextdomain": "^1.0.0",
     "grunt-rsync": "^3.0.0",
     "grunt-shell": "^1.1.2",
